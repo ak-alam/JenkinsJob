@@ -1,7 +1,7 @@
 pipeline{
   agent any
   
-  stage{
+  stages{
     stage('Pipeline start'){
       steps{
         echo 'Initiating a jenkins pipeline' 
@@ -9,19 +9,19 @@ pipeline{
       }
     }
   
-  stage{
-    stage('Build'){
-      steps{
-        echo 'Building' 
+    stage{
+      stage('Build'){
+        steps{
+          echo 'Building' 
+          }
         }
       }
-    }
   
-  stage{
-    stage('Deploy'){
-      steps{
-        echo 'Deploying' 
+    stage{
+      stage('Deploy'){
+        steps{
+          echo 'Deploying' 
+          }
         }
-      }
     }
 }
