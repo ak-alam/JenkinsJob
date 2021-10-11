@@ -1,0 +1,27 @@
+pipeline{
+  agent any
+  
+  stage{
+    stage('Pipeline start'){
+      steps{
+        echo 'Initiating a jenkins pipeline' 
+        }
+      }
+    }
+  
+  stage{
+    stage('Build'){
+      steps{
+        echo 'Building' 
+        }
+      }
+    }
+  
+  stage{
+    stage('Deploy'){
+      steps{
+        echo 'Deploying' 
+        }
+      }
+    }
+}
