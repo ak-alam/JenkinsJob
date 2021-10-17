@@ -1,2 +1,2 @@
-hello from test jenkins job.
+hello jenkins.
 
